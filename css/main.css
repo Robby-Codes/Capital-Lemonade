@@ -1,11 +1,73 @@
 * {
-    padding: 0;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Banner Section */
 
 #banner-section {
-    background-image: url();
+    height: 100vh;
+    background-image: url("../assets/back1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 10px solid white;
+}
+
+.banner-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-content h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.banner-content button {
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px double white;
+    outline: none;
+}
+
+.banner-buttons {
+    transform: rotate(45deg);
+}
+
+.banner-buttons button span {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.banner-buttons button{
+    height: 100%;
+    width: 100%;
+}
+
+.banner-buttons > button {
+    height: 150px;
+    width: 150px;
+    margin: 5px 0 5px 0;
+}
+
+.banner-buttons > div {
+    height: 75px;
+    width: 75px;
+}
+
+.banner-buttons div:nth-last-of-type(1) {
+    width: 100%;
+}
+
+.banner-buttons div:nth-last-of-type(1) button {
+    width: 50%;
+    float: right;
 }
