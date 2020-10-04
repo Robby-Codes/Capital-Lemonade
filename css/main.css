@@ -5,6 +5,21 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    padding: 2.5px;
+ }
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+     background: orange;
+     border-radius: 6px;
+     border: orange 1px solid;
+}
+
 /* Banner Section */
 
 #banner-section {
@@ -72,6 +87,7 @@
     float: right;
 }
 
+
 /* Park Section */
 
 #park-section {
@@ -114,6 +130,7 @@
     border: 3px solid orange;
     border-radius: 100px;
     margin-bottom: 10px;
+    box-shadow: 3px 3px 10px black;
 }
 
 .line {
@@ -134,29 +151,68 @@
     text-align: center;
 }
 
-/*
-.pic {
-    height: auto;
-    width: 300px;
-    padding: 20px;
+.park2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* Product Section */
+
+#product-section {
+    height: 100vh;
+    padding: 50px 0 50px 0;
+    border: 10px solid white; 
+    background-color: gold;
+}
+
+#product-section h1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.drinks-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drinks {
+    height: 630px;
+    width: 33.33%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    background-color: red;
 }
 
-.pic > p {
+.drinks img {
+    height: 400px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.drinks p {
     color: white;
-    font-size: 1.5em;
-}
-
-.park1 img, .park2 img, .park3 img {
-    height: auto;
-    width: 300px;
-    border: 3px solid orange;
-    border-radius: 100px;
+    text-align: justify;
+    width: 80%;
     margin-bottom: 20px;
 }
-*/
+
+.drinks p:first-of-type {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* Footer Section */
+
+footer {
+    padding-top: 50px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+}
+
