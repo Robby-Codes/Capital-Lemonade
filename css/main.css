@@ -71,3 +71,92 @@
     width: 50%;
     float: right;
 }
+
+/* Park Section */
+
+#park-section {
+    height: auto;
+    padding: 50px 0 50px 0;
+    background-image: url("../assets/park1.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+#park-section h1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pic {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.park1 div:nth-of-type(1), .park2 div:nth-of-type(1), .park3 div:nth-of-type(1) {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.park1 img, .park2 img, .park3 img {
+    height: auto;
+    width: 300px;
+    border: 3px solid orange;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.line {
+    background-color: orange;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    top: -15px;
+}
+
+.description {
+    color: white;
+    width: 500px;
+    background-color: orange;
+    padding: 5px;
+    border: 3px solid white;
+    text-align: center;
+}
+
+/*
+.pic {
+    height: auto;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+.pic > p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.park1 img, .park2 img, .park3 img {
+    height: auto;
+    width: 300px;
+    border: 3px solid orange;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+*/
