@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/*Custom Scroll Bar */
+
 ::-webkit-scrollbar {
     width: 8px;
     padding: 2.5px;
@@ -20,6 +26,7 @@
      border: orange 1px solid;
 }
 
+
 /* Banner Section */
 
 #banner-section {
@@ -34,6 +41,7 @@
 .banner-content {
     height: 100%;
     width: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,7 +49,7 @@
 
 .banner-content h1 {
     color: white;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .banner-content button {
@@ -62,15 +70,15 @@
     transform: rotate(-45deg);
 }
 
-.banner-buttons button{
+.banner-buttons a button{
     height: 100%;
     width: 100%;
 }
 
-.banner-buttons > button {
+.banner-buttons > a button {
     height: 150px;
     width: 150px;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
 }
 
 .banner-buttons > div {
@@ -85,6 +93,22 @@
 .banner-buttons div:nth-last-of-type(1) button {
     width: 50%;
     float: right;
+}
+
+
+/* Banner Button Animations */
+
+@keyframes btnHoverOn {
+    to {
+        color: orange;
+        border-color: orange;
+        transform: scale(1.05);
+    }
+}
+
+#banner-section div button:hover {
+    animation: btnHoverOn 0.5s 1;
+    -webkit-animation-fill-mode: forwards;
 }
 
 
@@ -300,3 +324,4 @@ form > input {
     border: 2px solid orange;
     outline: none;
 }
+
