@@ -249,7 +249,7 @@ html {
 /* Product Section */
 
 #product-section {
-    height: 100vh;
+    height: auto;
     padding: 50px 0 50px 0;
     border: 10px solid white; 
     background-color: gold;
@@ -570,12 +570,12 @@ form > input {
 
     .drinks img {
         height: 300px;
-        width: 100%;
+        width: 200px;
         margin-bottom: 20px;
     }
 
     .drinks p {
-        width: 100%;
+        width: 80%;
         margin-bottom: 20px;
     }
 
@@ -655,11 +655,16 @@ form > input {
         font-size: 1em;
     }
 
+    form div label {
+        font-size: 0.9em;
+    }
+
     form > div input {
         width: 70%;
     }
 
     textarea {
+        margin-left: 0;
         height: 150px;
     }
 
@@ -719,6 +724,9 @@ form > input {
 
     #park-section {
         padding: 20px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #park-section h1 {
@@ -727,6 +735,7 @@ form > input {
     }
 
     .pic {
+        width: 80%;
         padding: 0 10px 0 10px;
         align-items: center;
         justify-content: space-between;
@@ -747,6 +756,12 @@ form > input {
     .park3 img {
         height: 200px;
         width: 200px;
+        margin-right: 30px;
+    }
+
+    .park2 img {
+        margin-right: 0;
+        margin-left: 30px;
     }
 
     .line {
@@ -754,7 +769,7 @@ form > input {
     }
 
     .description {
-        font-size: 0.9em;
+        font-size: 0.8em;
         height: 200px;
         width: 200px;
         opacity: 1;
@@ -926,6 +941,11 @@ form > input {
         border: 5px double white;
     }
 
+    .banner-buttons span {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
     .banner-buttons > a button {
         height: 200px;
         width: 200px;
@@ -941,6 +961,7 @@ form > input {
     /* Changes to Park Section */
     
     #park-section {
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -958,7 +979,7 @@ form > input {
     .park1 div:nth-of-type(1),
     .park2 div:nth-of-type(1),
     .park3 div:nth-of-type(1) {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
 
@@ -983,8 +1004,7 @@ form > input {
     /* Changes to Footer Section */
 
     footer {
-        height: auto;
+        height: 100vh;
         padding: 50px 10% 50px 10%;
     }
-
 }

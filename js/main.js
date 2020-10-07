@@ -19,44 +19,65 @@ image2.addEventListener("mouseout", ani_5);
 image3.addEventListener("mouseover", ani_3);
 image3.addEventListener("mouseout", ani_6);
 
+function screenSize () {
+    let windowWidth = window.innerWidth;
+    if (windowWidth >= 841) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function ani_1 () {
-    line1.style.transition = "all 0.5s";
-    line1.style.width = "100%";
-    description1.style.transition = "all 0.5s 0.5s";
-    description1.style.opacity = "1";
+    if (screenSize() === true) {
+        line1.style.transition = "all 0.5s";
+        line1.style.width = "100%";
+        description1.style.transition = "all 0.5s 0.5s";
+        description1.style.opacity = "1";
+    }
 }
 
 function ani_2 () {
-    line2.style.transition = "all 0.5s";
-    line2.style.width = "100%";
-    description2.style.transition = "all 0.5s 0.5s";
-    description2.style.opacity = "1";
+    if (screenSize() === true) {
+        line2.style.transition = "all 0.5s";
+        line2.style.width = "100%";
+        description2.style.transition = "all 0.5s 0.5s";
+        description2.style.opacity = "1";
+    }
 }
 
 function ani_3 () {
-    line3.style.transition = "all 0.5s";
-    line3.style.width = "100%";
-    description3.style.transition = "all 0.5s 0.5s";
-    description3.style.opacity = "1";
+    if (screenSize() === true) {
+        line3.style.transition = "all 0.5s";
+        line3.style.width = "100%";
+        description3.style.transition = "all 0.5s 0.5s";
+        description3.style.opacity = "1";
+    }
 }
 
 function ani_4 () {
-    line1.style.transition = "all 0.3s 0.3s";
-    line1.style.width = "0%";
-    description1.style.transition = "all 0.3s";
-    description1.style.opacity = "0";
+    if (screenSize() === true) {
+        line1.style.transition = "all 0.3s 0.3s";
+        line1.style.width = "0%";
+        description1.style.transition = "all 0.3s";
+        description1.style.opacity = "0";
+    }
 }
 
 function ani_5 () {
-    line2.style.transition = "all 0.3s 0.3s";
-    line2.style.width = "0%";
-    description2.style.transition = "all 0.3s";
-    description2.style.opacity = "0";
+    if (screenSize() === true) {
+        line2.style.transition = "all 0.3s 0.3s";
+        line2.style.width = "0%";
+        description2.style.transition = "all 0.3s";
+        description2.style.opacity = "0";
+    }
 }
 
 function ani_6 () {
-    line3.style.transition = "all 0.3s 0.3s";
-    line3.style.width = "0%";
-    description3.style.transition = "all 0.3s";
-    description3.style.opacity = "0";
+    if (screenSize() === true) {
+        line3.style.transition = "all 0.3s 0.3s";
+        line3.style.width = "0%";
+        description3.style.transition = "all 0.3s";
+        description3.style.opacity = "0";
+    }
 }
