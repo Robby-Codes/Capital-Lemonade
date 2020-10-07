@@ -906,3 +906,85 @@ form > input {
         text-decoration: none;
     }
 }
+
+
+/* Changing sizes for Laptop and Desktop Users */
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+
+
+    /* Changes to Banner Section */
+
+    .banner-content {
+        width: 80%;
+    }
+
+    .banner-content h1 {
+        font-size: 5em;
+    }
+
+    .banner-content button {
+        border: 5px double white;
+    }
+
+    .banner-buttons > a button {
+        height: 200px;
+        width: 200px;
+        margin: 15px 0 15px 0;
+    }
+
+    .banner-buttons > div {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    /* Changes to Park Section */
+    
+    #park-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #park-section h1 {
+        font-size: 5em;
+    }
+
+    .pic {
+        width: 80%;
+    }
+
+    .park1 div:nth-of-type(1),
+    .park2 div:nth-of-type(1),
+    .park3 div:nth-of-type(1) {
+        font-size: 2em;
+    }
+
+
+    /* Changes to Product Section */
+
+    #product-section {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #product-section h1 {
+        font-size: 5em;
+    }
+
+    .drinks-container {
+        width: 80%;
+    }
+
+
+    /* Changes to Footer Section */
+
+    footer {
+        height: auto;
+        padding: 50px 10% 50px 10%;
+    }
+
+}
