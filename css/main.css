@@ -137,7 +137,10 @@ html {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;    
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #park-section h1 {
@@ -149,7 +152,7 @@ html {
 
 .pic {
     height: auto;
-    width: auto;
+    width: 90%;
     padding: 20px;
     display: flex;
     justify-content: left;
@@ -192,7 +195,7 @@ html {
 }
 
 .description {
-    font-size: 1.2em;
+    font-size: 1.05em;
     color: white;
     height: 300px;
     width: 600px;
@@ -328,7 +331,7 @@ html {
 /* Footer Section */
 
 footer {
-    height: 65vh;
+    height: 100vh;
     padding: 50px 0 50px 0;
     background-color: gray;
     display: flex;
