@@ -676,3 +676,233 @@ form > input {
         text-decoration: none;
     }
 }
+
+
+/* Changing sizes for phone users (Landscape View) */
+@media screen and (min-width: 501px) and (max-width: 840px) {
+
+
+    /* Changes to Banner Section */
+
+    #banner-section {
+        border: 5px solid white;
+    }
+
+    .banner-content h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .banner-buttons > a button {
+        height: 100px;
+        width: 100px;
+    }
+
+    .banner-buttons > div {
+        height: 50px;
+        width: 50px;
+    }
+
+    
+    /* Changes to Banner Button Animations */
+
+    #banner-section div button {
+        animation: none;
+    }
+
+    #banner-section div button:hover {
+        animation: none;
+    }
+
+
+    /* Changes to Park Section */
+
+    #park-section {
+        padding: 20px 0 20px 0;
+    }
+
+    #park-section h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .pic {
+        padding: 0 10px 0 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .park2 {
+        justify-content: space-between;
+    }
+
+    .park1 div:nth-of-type(1),
+    .park2 div:nth-of-type(1),
+    .park3 div:nth-of-type(1) {
+        font-size: 1em;
+    }
+
+    .park1 img,
+    .park2 img,
+    .park3 img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .description {
+        font-size: 0.9em;
+        height: 200px;
+        width: 200px;
+        opacity: 1;
+    }
+
+    
+    /* Changes to Park Image Animations */
+
+    .park1 img,
+    .park2 img,
+    .park3 img {
+        animation: none;
+    }
+
+    .park1 img:hover,
+    .park2 img:hover,
+    .park3 img:hover {
+        animation: none;
+    }
+
+
+    /* Changes to Product Section */
+
+    #product-section {
+        height: auto;
+        padding: 20px 0 20px 0;
+        border: 5px solid white;
+    }
+
+    #product-section h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .drinks-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drinks {
+        height: auto;
+        width: 80%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .drinks img {
+        height: 250px;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .drinks p {
+        text-align: justify;
+    }
+
+    .drinks p:last-of-type {
+        font-size: 0.8em;
+        height: auto;
+        width: 500px;
+        text-align: center;
+    }
+
+    .drinks p:first-of-type {
+        height: auto;
+        margin: 0 30px 0 30px;
+    }
+
+
+    /* Changes to Product Section Animations */
+
+    .drinks img {
+        animation: none;
+    }
+    
+    .drinks img:hover {
+        animation: none;
+    }
+
+
+    /* Changes to Footer Section */
+
+    footer {
+        height: auto;
+        padding: 20px 0 20px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-container > h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        text-decoration: underline;
+    }
+
+    .info a {
+        margin-bottom: 20px;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-container div:nth-of-type(1) a,
+    .info-container div:nth-of-type(2) a,
+    .info-container div:nth-of-type(3) a {
+        width: 200px;
+    }
+
+    .info-medias > h1 {
+        font-size: 2em;
+        text-decoration: underline;
+        margin: 30px 0 30px 0;
+    }
+
+    .info-medias div:nth-of-type(1) a,
+    .info-medias div:nth-of-type(2) a,
+    .info-medias div:nth-of-type(3) a {
+        width: 200px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+    }
+
+    .contact-form h1 {
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    form {
+        font-size: 1em;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+
+    /* Changes to Footer Link Animations */
+
+    .social a:hover {
+        text-decoration: none;
+    }
+}
