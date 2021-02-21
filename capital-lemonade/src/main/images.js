@@ -1,3 +1,5 @@
+// Importing all images needed for the site.
+
 import park1 from "../assets/park2.jpeg";
 import park2 from "../assets/park3.jpeg";
 import park3 from "../assets/park4.jpg";
@@ -11,6 +13,7 @@ import twitter from "../assets/twitter.png";
 import facebook from "../assets/facebook.png";
 import youtube from "../assets/youtube.png";
 
+// Exporting object, with all site images, for use elsewhere.
 export const images = {
   park1,
   park2,

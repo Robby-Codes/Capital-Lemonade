@@ -246,7 +246,7 @@ html {
 /* Product Section */
 
 #product-section {
-  height: auto;
+  height: 100vh;
   padding: 50px 0 50px 0;
   border: 10px solid white;
   background-color: gold;
@@ -443,6 +443,13 @@ form > input {
 
 .social a:hover {
   text-decoration: underline;
+}
+
+footer small {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 /* Changing Sizes for Phone Users (Portrait View) */
@@ -680,7 +687,7 @@ form > input {
 }
 
 /* Changing sizes for phone users (Landscape View) */
-@media screen and (min-width: 501px) and (max-width: 840px) {
+@media screen and (min-width: 501px) and (max-width: 764px) {
   /* Changes to Banner Section */
 
   #banner-section {
@@ -909,6 +916,118 @@ form > input {
   }
 }
 
+/* Changing sizes for other screen sizes */
+@media screen and (min-width: 765px) and (max-width: 1199px) {
+  /* Changes to Banner Section */
+
+  .banner-content {
+    width: 90%;
+  }
+
+  .banner-content h1 {
+    font-size: 4em;
+  }
+
+  .banner-content button {
+    border: 5px double white;
+  }
+
+  .banner-buttons span {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .banner-buttons > a button {
+    height: 150px;
+    width: 150px;
+    margin: 15px 0 15px 0;
+  }
+
+  .banner-buttons > div {
+    height: 75px;
+    width: 75px;
+  }
+
+  /* Changes to Park Section */
+
+  #park-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #park-section h1 {
+    font-size: 4em;
+  }
+
+  .pic {
+    width: 90%;
+  }
+
+  .pic img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .park1 div:nth-of-type(1),
+  .park2 div:nth-of-type(1),
+  .park3 div:nth-of-type(1) {
+    font-size: 1.2em;
+  }
+
+  /* Changes to Product Section */
+
+  #product-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  #product-section h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+
+  .drinks-container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .drinks-container .drinks {
+    height: 500px;
+    width: 33.33%;
+  }
+
+  .drinks-container .drinks img {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .drinks-container .drinks p:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+
+  .drinks-container .drinks p:nth-of-type(2) {
+    font-size: 0.9em;
+    width: 85%;
+  }
+
+  /* Changes to Footer Section */
+
+  footer {
+    height: auto;
+    padding: 50px 5% 50px 5%;
+  }
+}
+
 /* Changing sizes for Laptop and Desktop Users */
 @media screen and (min-width: 1200px) and (max-width: 2000px) {
   /* Changes to Banner Section */
@@ -968,18 +1087,43 @@ form > input {
   /* Changes to Product Section */
 
   #product-section {
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
   }
 
   #product-section h1 {
-    font-size: 5em;
+    font-size: 4.5em;
+    margin-bottom: 20px;
   }
 
   .drinks-container {
-    width: 80%;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .drinks-container .drinks {
+    height: 500px;
+    width: 33.33%;
+  }
+
+  .drinks-container .drinks img {
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .drinks-container .drinks p:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+
+  .drinks-container .drinks p:nth-of-type(2) {
+    font-size: 0.9em;
+    width: 85%;
   }
 
   /* Changes to Footer Section */

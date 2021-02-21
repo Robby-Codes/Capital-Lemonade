@@ -3,6 +3,7 @@ import { images } from "./images";
 import "./animations";
 import "./main.css";
 
+// Main Site Component
 const CapitalLemonade = () => {
   return (
     <>
@@ -14,14 +15,15 @@ const CapitalLemonade = () => {
   );
 };
 
+// Banner Section Component
 const BannerSection = () => {
   return (
     <section id="banner-section">
-      <div class="banner-content">
+      <div className="banner-content">
         <h1>
           Capital <br /> Lemonade
         </h1>
-        <div class="banner-buttons">
+        <div className="banner-buttons">
           <div>
             <a href="#park-section">
               <button>
@@ -37,7 +39,7 @@ const BannerSection = () => {
           <div>
             <a href="#footer-section">
               <button>
-                <span>About</span>
+                <span>Contact</span>
               </button>
             </a>
           </div>
@@ -47,17 +49,18 @@ const BannerSection = () => {
   );
 };
 
+// Park Section Component
 const ParkSection = () => {
   return (
     <section id="park-section">
       <h1>Capital Lemon Park</h1>
-      <div class="park1 pic">
+      <div className="park1 pic">
         <div>
-          <img class="image-1" src={images.park1} />
+          <img className="image-1" src={images.park1} />
           <p>Hundreds Of Lemon Trees!</p>
         </div>
-        <div class="line l1"></div>
-        <div class="description d1">
+        <div className="line l1"></div>
+        <div className="description d1">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
             illum sit error, amet molestiae recusandae dolorem ut tenetur nam
@@ -66,13 +69,13 @@ const ParkSection = () => {
           </p>
         </div>
       </div>
-      <div class="park2 pic">
+      <div className="park2 pic">
         <div>
-          <img class="image-2" src={images.park2} />
+          <img className="image-2" src={images.park2} />
           <p>Complementary Lemons</p>
         </div>
-        <div class="line l2"></div>
-        <div class="description d2">
+        <div className="line l2"></div>
+        <div className="description d2">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
             illum sit error, amet molestiae recusandae dolorem ut tenetur nam
@@ -81,13 +84,13 @@ const ParkSection = () => {
           </p>
         </div>
       </div>
-      <div class="park3 pic">
+      <div className="park3 pic">
         <div>
-          <img class="image-3" src={images.park3} />
+          <img className="image-3" src={images.park3} />
           <p>100% Organic Lemonade</p>
         </div>
-        <div class="line l3"></div>
-        <div class="description d3">
+        <div className="line l3"></div>
+        <div className="description d3">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
             illum sit error, amet molestiae recusandae dolorem ut tenetur nam
@@ -100,12 +103,13 @@ const ParkSection = () => {
   );
 };
 
+// Product Section Component
 const ProductSection = () => {
   return (
     <section id="product-section">
       <h1>Onsight Beverages</h1>
-      <div class="drinks-container">
-        <div class="drinks">
+      <div className="drinks-container">
+        <div className="drinks">
           <img src={images.drink1} />
           <p>$6.99</p>
           <p>
@@ -114,7 +118,7 @@ const ProductSection = () => {
             deserunt.
           </p>
         </div>
-        <div class="drinks">
+        <div className="drinks">
           <img src={images.drink2} />
           <p>$5.99</p>
           <p>
@@ -124,7 +128,7 @@ const ProductSection = () => {
             impedit itaque provident deserunt.
           </p>
         </div>
-        <div class="drinks">
+        <div className="drinks">
           <img src={images.drink3} />
           <p>$12.99</p>
           <p>
@@ -139,12 +143,13 @@ const ProductSection = () => {
   );
 };
 
+// Footer Section Component
 const FooterSection = () => {
   return (
     <footer id="footer-section">
-      <div class="info-container">
+      <div className="info-container">
         <h1>Contact Information</h1>
-        <div class="info">
+        <div className="info">
           <a href="tel:555-555-5555">
             <img src={images.phone} />
             <div>
@@ -153,7 +158,7 @@ const FooterSection = () => {
             </div>
           </a>
         </div>
-        <div class="info">
+        <div className="info">
           <a href="mailto:NotReal@gmail.com">
             <img src={images.email} />
             <div>
@@ -162,7 +167,7 @@ const FooterSection = () => {
             </div>
           </a>
         </div>
-        <div class="info">
+        <div className="info">
           <a href=".">
             <img src={images.location} />
             <div>
@@ -171,21 +176,21 @@ const FooterSection = () => {
             </div>
           </a>
         </div>
-        <div class="info-medias">
+        <div className="info-medias">
           <h1>Social Media</h1>
-          <div class="social">
+          <div className="social">
             <a href=".">
               <img src={images.twitter} />
               <p>Follow Us On Twitter</p>
             </a>
           </div>
-          <div class="social">
+          <div className="social">
             <a href=".">
               <img src={images.facebook} />
               <p>Capital Lemonade's Facebook Page</p>
             </a>
           </div>
-          <div class="social">
+          <div className="social">
             <a href=".">
               <img src={images.youtube} />
               <p>Check Out Our YouTube Channel</p>
@@ -193,7 +198,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <div class="contact-form">
+      <div className="contact-form">
         <h1>Send Us A Message</h1>
         <form action="." method="GET">
           <div>
@@ -211,6 +216,7 @@ const FooterSection = () => {
           <input type="submit" />
         </form>
       </div>
+      <small>Created By: Roberto Guerra</small>
     </footer>
   );
 };

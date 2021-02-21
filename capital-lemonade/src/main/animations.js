@@ -1,26 +1,31 @@
 /* Park Section Animations */
 
+// Running interval till the elements are rendered in.
 const applyAnimations = setInterval(() => {
+  // Collection needed elements for later animation
   const image1 = document.getElementsByClassName("image-1")[0];
   const image2 = document.getElementsByClassName("image-2")[0];
   const image3 = document.getElementsByClassName("image-3")[0];
-
   const line1 = document.getElementsByClassName("l1")[0];
   const line2 = document.getElementsByClassName("l2")[0];
   const line3 = document.getElementsByClassName("l3")[0];
-
   const description1 = document.getElementsByClassName("d1")[0];
   const description2 = document.getElementsByClassName("d2")[0];
   const description3 = document.getElementsByClassName("d3")[0];
 
+  // Check for screen size. I don't want this animation to be active if the
+  // screen width is smaller than 841px.
   function screenSize() {
     let windowWidth = window.innerWidth;
-    if (windowWidth >= 841) {
+    if (windowWidth >= 765) {
       return true;
     } else {
       return false;
     }
   }
+
+  // ani_1 -> ani_6 are hover animations for park section images.
+  // They reveal and hide text.
 
   function ani_1() {
     if (screenSize() === true) {
@@ -76,6 +81,8 @@ const applyAnimations = setInterval(() => {
     }
   }
 
+  // If images are not undefined, add event listener to them and stop the
+  // interval from continuing to run.
   if (image1 != undefined && image2 != undefined && image3 != undefined) {
     image1.addEventListener("mouseover", ani_1);
     image1.addEventListener("mouseout", ani_4);
