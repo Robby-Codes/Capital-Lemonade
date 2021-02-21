@@ -109,37 +109,40 @@ const ProductSection = () => {
     <section id="product-section">
       <h1>Onsight Beverages</h1>
       <div className="drinks-container">
-        <div className="drinks">
-          <img src={images.drink1} />
-          <p>$6.99</p>
-          <p>
-            Lorem ipsum dolor sit, amet consecteturniti ipsam? Enim assumenda
-            pariatur, unde perspiciatis fugiat accusamus eligendtaque provident
-            deserunt.
-          </p>
-        </div>
-        <div className="drinks">
-          <img src={images.drink2} />
-          <p>$5.99</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
-            repudiandae. Quo vel adipisci rerum ad accusantium, deleniti ipsam?
-            Enim assumenda pariatur, unde perspiciatis fugiat accusamus eligendi
-            impedit itaque provident deserunt.
-          </p>
-        </div>
-        <div className="drinks">
-          <img src={images.drink3} />
-          <p>$12.99</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
-            repudiandae. Quo vel adipisci rerum Enim assumenda pariatur, unde
-            perspiciatis fugiat accusamus eligendi impedit itaque provident
-            deserunt.
-          </p>
-        </div>
+        <Product
+          img={images.drink1}
+          price={"$6.99"}
+          description={
+            "Lorem ipsum dolor sit, amet consectetur niti ipsam? Enim assumenda pariatur, unde perspiciatis fugiat accusamus eligendtaque provident deserunt."
+          }
+        />
+        <Product
+          img={images.drink2}
+          price={"$5.99"}
+          description={
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, repudiandae. Quo vel adipisci rerum ad accusantium, deleniti ipsam? Enim assumenda pariatur, unde perspiciatis fugiat accusamus eligendi impedit itaque provident deserunt."
+          }
+        />
+        <Product
+          img={images.drink3}
+          price={"12.99"}
+          description={
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, repudiandae. Quo vel adipisci rerum Enim assumenda pariatur, unde perspiciatis fugiat accusamus eligendi impedit itaque provident deserunt."
+          }
+        />
       </div>
     </section>
+  );
+};
+
+// Individual Drinks/Products component
+const Product = ({ img, price, description }) => {
+  return (
+    <div className="drinks">
+      <img src={img} />
+      <p>{price}</p>
+      <p>{description}</p>
+    </div>
   );
 };
 
@@ -147,77 +150,91 @@ const ProductSection = () => {
 const FooterSection = () => {
   return (
     <footer id="footer-section">
-      <div className="info-container">
-        <h1>Contact Information</h1>
-        <div className="info">
-          <a href="tel:555-555-5555">
-            <img src={images.phone} />
-            <div>
-              <h1>Call Us</h1>
-              <p>555-555-5555</p>
-            </div>
-          </a>
-        </div>
-        <div className="info">
-          <a href="mailto:NotReal@gmail.com">
-            <img src={images.email} />
-            <div>
-              <h1>eMail</h1>
-              <p>NotReal@gmail.com</p>
-            </div>
-          </a>
-        </div>
-        <div className="info">
-          <a href=".">
-            <img src={images.location} />
-            <div>
-              <h1>Location</h1>
-              <p>Lorem ipsum ST, Nowhere</p>
-            </div>
-          </a>
-        </div>
-        <div className="info-medias">
-          <h1>Social Media</h1>
-          <div className="social">
-            <a href=".">
-              <img src={images.twitter} />
-              <p>Follow Us On Twitter</p>
-            </a>
-          </div>
-          <div className="social">
-            <a href=".">
-              <img src={images.facebook} />
-              <p>Capital Lemonade's Facebook Page</p>
-            </a>
-          </div>
-          <div className="social">
-            <a href=".">
-              <img src={images.youtube} />
-              <p>Check Out Our YouTube Channel</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="contact-form">
-        <h1>Send Us A Message</h1>
-        <form action="." method="GET">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" required />
-          </div>
-          <div>
-            <label for="about">Subject</label>
-            <input type="text" id="about" required />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea type="text" id="message" required></textarea>
-          </div>
-          <input type="submit" />
-        </form>
-      </div>
+      <ContactInfo />
+      <ContactForm />
       <small>Created By: Roberto Guerra</small>
     </footer>
+  );
+};
+
+// Cantact Info for Footer Section
+const ContactInfo = () => {
+  return (
+    <div className="info-container">
+      <h1>Contact Information</h1>
+      <div className="info">
+        <a href="tel:555-555-5555">
+          <img src={images.phone} />
+          <div>
+            <h1>Call Us</h1>
+            <p>555-555-5555</p>
+          </div>
+        </a>
+      </div>
+      <div className="info">
+        <a href="mailto:NotReal@gmail.com">
+          <img src={images.email} />
+          <div>
+            <h1>eMail</h1>
+            <p>NotReal@gmail.com</p>
+          </div>
+        </a>
+      </div>
+      <div className="info">
+        <a href=".">
+          <img src={images.location} />
+          <div>
+            <h1>Location</h1>
+            <p>Lorem ipsum ST, Nowhere</p>
+          </div>
+        </a>
+      </div>
+      <div className="info-medias">
+        <h1>Social Media</h1>
+        <div className="social">
+          <a href=".">
+            <img src={images.twitter} />
+            <p>Follow Us On Twitter</p>
+          </a>
+        </div>
+        <div className="social">
+          <a href=".">
+            <img src={images.facebook} />
+            <p>Capital Lemonade's Facebook Page</p>
+          </a>
+        </div>
+        <div className="social">
+          <a href=".">
+            <img src={images.youtube} />
+            <p>Check Out Our YouTube Channel</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Contact Form component for Footer Section
+const ContactForm = () => {
+  return (
+    <div className="contact-form">
+      <h1>Send Us A Message</h1>
+      <form action="." method="GET">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div>
+          <label for="about">Subject</label>
+          <input type="text" id="about" required />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea type="text" id="message" required></textarea>
+        </div>
+        <input type="submit" />
+      </form>
+    </div>
   );
 };
 
