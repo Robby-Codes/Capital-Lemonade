@@ -1,7 +1,15 @@
 import React from "react";
+import "./main.css";
 
 const CapitalLemonade = () => {
-  return <h1>Testing</h1>;
+  return (
+    <>
+      <BannerSection />
+      <ParkSection />
+      <ProductSection />
+      <FooterSection />
+    </>
+  );
 };
 
 const BannerSection = () => {
