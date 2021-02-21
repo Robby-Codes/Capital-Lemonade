@@ -1,4 +1,6 @@
-import React from "react";
+import React, { ComponentDidMount } from "react";
+import { images } from "./images";
+import "./animations";
 import "./main.css";
 
 const CapitalLemonade = () => {
@@ -51,7 +53,7 @@ const ParkSection = () => {
       <h1>Capital Lemon Park</h1>
       <div class="park1 pic">
         <div>
-          <img class="image-1" src="assets/park2.jpeg" />
+          <img class="image-1" src={images.park1} />
           <p>Hundreds Of Lemon Trees!</p>
         </div>
         <div class="line l1"></div>
@@ -66,7 +68,7 @@ const ParkSection = () => {
       </div>
       <div class="park2 pic">
         <div>
-          <img class="image-2" src="assets/park3.jpeg" />
+          <img class="image-2" src={images.park2} />
           <p>Complementary Lemons</p>
         </div>
         <div class="line l2"></div>
@@ -81,7 +83,7 @@ const ParkSection = () => {
       </div>
       <div class="park3 pic">
         <div>
-          <img class="image-3" src="assets/park4.jpg" />
+          <img class="image-3" src={images.park3} />
           <p>100% Organic Lemonade</p>
         </div>
         <div class="line l3"></div>
@@ -104,7 +106,7 @@ const ProductSection = () => {
       <h1>Onsight Beverages</h1>
       <div class="drinks-container">
         <div class="drinks">
-          <img src="assets/drink2.jpg" />
+          <img src={images.drink1} />
           <p>$6.99</p>
           <p>
             Lorem ipsum dolor sit, amet consecteturniti ipsam? Enim assumenda
@@ -113,7 +115,7 @@ const ProductSection = () => {
           </p>
         </div>
         <div class="drinks">
-          <img src="assets/drink4.jpg" />
+          <img src={images.drink2} />
           <p>$5.99</p>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
@@ -123,7 +125,7 @@ const ProductSection = () => {
           </p>
         </div>
         <div class="drinks">
-          <img src="assets/drink3.jpg" />
+          <img src={images.drink3} />
           <p>$12.99</p>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
@@ -144,7 +146,7 @@ const FooterSection = () => {
         <h1>Contact Information</h1>
         <div class="info">
           <a href="tel:555-555-5555">
-            <img src="assets/phone.png" />
+            <img src={images.phone} />
             <div>
               <h1>Call Us</h1>
               <p>555-555-5555</p>
@@ -153,7 +155,7 @@ const FooterSection = () => {
         </div>
         <div class="info">
           <a href="mailto:NotReal@gmail.com">
-            <img src="assets/email.png" />
+            <img src={images.email} />
             <div>
               <h1>eMail</h1>
               <p>NotReal@gmail.com</p>
@@ -162,7 +164,7 @@ const FooterSection = () => {
         </div>
         <div class="info">
           <a href=".">
-            <img src="assets/location.png" />
+            <img src={images.location} />
             <div>
               <h1>Location</h1>
               <p>Lorem ipsum ST, Nowhere</p>
@@ -173,19 +175,19 @@ const FooterSection = () => {
           <h1>Social Media</h1>
           <div class="social">
             <a href=".">
-              <img src="assets/twitter.png" />
+              <img src={images.twitter} />
               <p>Follow Us On Twitter</p>
             </a>
           </div>
           <div class="social">
             <a href=".">
-              <img src="assets/facebook.png" />
+              <img src={images.facebook} />
               <p>Capital Lemonade's Facebook Page</p>
             </a>
           </div>
           <div class="social">
             <a href=".">
-              <img src="assets/youtube.png" />
+              <img src={images.youtube} />
               <p>Check Out Our YouTube Channel</p>
             </a>
           </div>
